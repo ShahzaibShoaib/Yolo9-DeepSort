@@ -119,9 +119,9 @@ def draw_boxes(frame, bbox_xyxy, draw_trails, identities=None, categories=None, 
 
 @smart_inference_mode()
 def run(
-        weights=ROOT / 'yolo.pt',  # model path or triton URL
-        source=ROOT / 'data/images',  # file/dir/URL/glob/screen/0(webcam)
-        data=ROOT / 'data/coco.yaml',  # dataset.yaml path
+        weights=ROOT / 'Yolo9-DeepSort/yolo.pt',  # model path or triton URL
+        source=ROOT / 'Yolo9-DeepSort/data/images',  # file/dir/URL/glob/screen/0(webcam)
+        data=ROOT / 'Yolo9-DeepSort/data/coco.yaml',  # dataset.yaml path
         imgsz=(640, 640),  # inference size (height, width)
         conf_thres=0.25,  # confidence threshold
         iou_thres=0.45,  # NMS IOU threshold
@@ -134,7 +134,7 @@ def run(
         augment=False,  # augmented inference
         visualize=False,  # visualize features
         update=False,  # update all models
-        project=ROOT / 'runs/detect',  # save results to project/name
+        project=ROOT / 'Yolo9-DeepSort/runs/detect',  # save results to project/name
         name='exp',  # save results to project/name
         exist_ok=False,  # existing project/name ok, do not increment
         half=False,  # use FP16 half-precision inference
