@@ -25,7 +25,7 @@ from utils.torch_utils import select_device, smart_inference_mode
 def initialize_deepsort():
     # Create the Deep SORT configuration object and load settings from the YAML file
     cfg_deep = get_config()
-    cfg_deep.merge_from_file("deep_sort_pytorch/configs/deep_sort.yaml")
+    cfg_deep.merge_from_file("Yolo9-DeepSort/deep_sort_pytorch/configs/deep_sort.yaml")
 
     # Initialize the DeepSort tracker
     deepsort = DeepSort(cfg_deep.DEEPSORT.REID_CKPT,
